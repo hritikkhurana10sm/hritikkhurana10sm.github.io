@@ -110,6 +110,25 @@ header{
 	font-size: 3.7rem;
 }
 
+@keyframes type{
+   from {
+        width : 0;
+   }
+}
+
+@keyframes blink{
+	50%{
+		border-color : transparent;
+	}
+}
+
+#special{
+	white-space: nowrap;
+	 overflow: hidden;
+  border-right: 3px solid;
+	width : 18ch;
+	animation: type 2s steps(18) , blink 0.9s step-end infinite alternate;
+}
 .small-line{
 	margin-top : 10px;
 color : grey;
@@ -574,4 +593,632 @@ textarea{
 
 .up i:hover{
 	color : green;
+}
+
+
+
+
+/******************************************************************************************************************/
+@media only screen and (max-width: 520px){
+*{
+	margin : 0;
+	padding : 0;
+}
+/*****************body****************/
+body{
+	width: 100%;
+	background-color: black;
+}
+
+/**************header******************/
+
+header{
+	    height: 44vh;
+    margin-bottom: 150px;
+}
+.nav-div{
+	/*display: flex;*/
+	display: none;
+	justify-content: space-between;
+}
+
+.nav-ul{
+	list-style: none;
+	background-color: red;
+	border-bottom-left-radius: 8px;
+}
+
+.nav-ul li{
+	display: inline-block;
+	margin : 14px 20px 20px 10px;
+	text-align: center;
+}
+
+.nav-ul li a{
+	text-decoration: none;
+	color : white;
+	transition: all 0.8 ease-in-out;
+}
+
+.nav-ul li a:hover{
+	color : yellow;
+	text-decoration: underline;
+}
+
+.logo{
+	margin-top : 3%;
+	color : white;
+	font-size: 2rem;
+	text-decoration: none;
+	z-index : 1;
+	font-family: sans-serif;
+	font-weight: 700;
+	
+	
+}
+
+.logo:hover{
+	color : yellow;
+  border-color: yellow;
+}
+
+
+/**************aside div**************/
+
+.aside-div{
+	    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    min-height: 64%;
+    background-color: red;
+}
+
+
+
+/**************flex*****************/
+
+.flex-header-container{
+	display: flex;
+	    /*margin-left: 9%;*/
+    margin-top: 3%;
+    justify-content: center;
+}
+
+
+.left-side{
+	    width: 41%;
+    height: 70vh;
+    z-index: 1;}
+
+.left-side img{
+    width: 84%;
+    height: 49%;
+    border-radius: 20px;
+    margin-bottom: 75px;
+}
+
+.right-side{
+	width : 55%;
+	overflow : hidden;
+}
+
+@keyframes type{
+   from {
+        width : 0;
+   }
+}
+
+@keyframes blink{
+	50%{
+		border-color : transparent;
+	}
+}
+.heading {
+	margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+#special{
+	white-space: nowrap;
+	 overflow: hidden;
+  border-right: 3px solid;
+	width : 19ch;
+	animation: type 2s steps(18) , blink 0.9s step-end infinite alternate;
+}
+
+.small-line{
+	margin-top : 10px;
+color : grey;
+    text-align: center;
+}
+
+/***********icons**************/
+.icons{
+	margin-top: 39px;
+    margin-left: 21px;
+    margin: auto;
+}
+.icons div{
+	width: 30px;
+    height: 26px;
+    position: relative;
+    /* background-color: white; */
+    display: inline-block;
+    margin: 21px 2px 0px 8px;
+}
+
+.icons div i{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	/*padding: 20px 20px 20px 20px;*/
+	font-size: 32px;
+}
+
+.linkedin{
+	color : #1da1f2;
+	transition : all 0.4s ease-in-out;
+
+}
+
+.linkedin:hover{
+   background: linear-gradient(purple , red);
+   transform: translateY(-10px);
+}
+.github{
+	color : black;
+	transition : all 0.4s ease-in-out;
+}
+.github:hover{
+   background: linear-gradient(purple , red);
+   transform: translateY(-10px);
+}
+.medium{
+	color : black;
+	transition : all 0.4s ease-in-out;
+}
+.medium:hover{
+   background: linear-gradient(purple , red);
+    transform: translateY(-10px);
+}
+.facebook{
+	color : #1da1f2;
+	transition : all 0.4s ease-in-out;
+}
+.facebook:hover{
+   background: linear-gradient(purple , red);
+   transform: translateY(-10px);
+}
+
+
+/**********about***************/
+
+section{
+    display: flex;
+    flex-direction: column;	
+    /*align-items: center;*/
+}
+#about{
+	width : 96%;
+	min-height :200px;
+	align-self: flex-start;
+	margin-bottom: 75px;
+}
+#about h1{
+	margin: auto;
+    text-align: center;
+    font-size: 3.2rem;
+    color: white;
+    font-weight: 900;
+}
+
+#about p{
+	    margin-top: 26px;
+    width: 90%;
+    margin-bottom: 26px;
+    color: white;
+    line-height: 1.4;
+    word-spacing: 0.2rem;
+    font-size: 21px;
+    text-align: justify;
+
+}
+.highlight{
+	color : black;
+	background-color: red;
+}
+
+
+/**************about-skills************/
+
+.about-skills{
+	    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-skills div{
+	margin: 26px 26px 15px  15px;
+}
+.about-skills  span{
+	color : white;
+	font-size: 25px;
+	font-weight: bold;
+}
+.about-skills i{
+	color : red;
+	font-size: 25px;
+}
+
+/***********education***************/
+.flex-edu{
+	width : 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.pragrammer2{
+	margin-right : 3%;
+}
+.programmer2 img{
+	width : 500px;
+	height :500px;
+	margin-left : -6%;
+}
+#education h1{
+    font-size: 4.2rem;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+.edu-highlight{
+	color : black;
+	background-color: red;
+}
+
+.edu-box{
+	margin-bottom: 5%;
+    height: auto;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+	/*border : 4px solid red;*/
+}
+
+.edu-details{
+	width : 50%;
+	height : auto;
+	margin-left : 5%;
+	margin-top : 1%;
+	margin-bottom: 5%;
+	position: relative;
+	/*border : 4px solid red;*/
+
+}
+.edu-details::after{
+	   content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    top: 37%;
+    left: 145%;
+    border-radius: 50%;
+    z-index: 2;
+}
+.date{
+  color : white;
+  margin-bottom : 10px;
+}
+
+.school{
+     color : black;
+     background-color: red;
+     margin-bottom : 10px;
+     font-weight: bolder;
+     display: inline-block;
+}
+
+.grade{
+	color : white;
+	margin-bottom : 10px;
+}
+
+.track-box{
+	 width: 0;
+    height: 75%;
+    position: absolute;
+    left: 78%;
+    top: 11%;
+    border-style: double;
+    border-color: white;
+
+}
+
+
+.plane{
+    position: sticky;
+    top : 160px;
+}
+
+.plane i{
+
+	color : red;
+	 transform: rotate(90deg);
+	font-size: 34px;
+   /*display: block;*/  /*it require because we wont plane below not beside*/
+}
+
+@media only screen and (max-width : 1300px){
+	.programmer2{
+		display: none;
+	}
+}
+
+
+/**************experience*****************/
+
+section{
+	direction: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#experience{
+	/*margin-left : 5%;*/
+}
+.exp-head{
+	/*margin-left : 3%;*/
+	    font-size: 3.2rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10%;
+    margin-top: 4%;
+    margin-left: 0;
+}
+
+.exp-head span{
+	background-color: red;
+	color : black;
+}
+
+.grid-flex{
+	width : auto;
+	height : auto;
+  margin-top : 75px;
+}
+
+.grid-details{
+	height: auto;
+    width: auto;
+    border: 4px solid red;
+    margin: 4%;
+
+    margin-top: 2%;
+    margin-bottom: 19%;
+    box-shadow: 4px 4px 1px 5px white;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.design{
+	font-size : 39px;
+	color : white;
+    /*margin-left: 1%;*/
+}
+
+.company{
+   font-size: 25px;
+   font-family: fantasy;
+    color : black;
+    background-color: red;
+}
+
+.timing{
+	font-size :20px;
+	color : grey;
+	margin : 10px 1px;
+}
+
+.disc{
+	font-size: 20px;
+	color : grey;
+	margin : 1px 1px;
+}
+
+/***********Blogs***********/
+.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#blogs h1{
+	/*margin-left : 8%;*/
+	
+}
+
+.blog-box{
+	width : 90%;
+	/*margin-left: 5%;*/
+     display: flex;
+/*border : 4px red solid;
+*/flex-wrap: wrap;
+min-width: 15rem;
+margin-left: 0;
+margin-top: 0;
+/*margin-top: 4%;*/
+}
+
+.blog-detail{
+	width : 35%;
+	/*margin : 5%;*/
+	/*border : 4px red solid;*/
+	margin: 6px;
+min-width:15rem;
+flex-grow: 1;
+    margin-bottom: 11%;
+}
+
+.img-cont{
+	width : auto;
+	height : 17rem;
+	    margin-bottom: 5%;
+}
+
+.img-cont img{
+	width : 100%;
+	height : 100%;
+	transition: all 2s ease-in-out;
+
+}
+
+.blog-detail p{
+	color : white;
+	 margin-top: 4px;
+	 /*background-color: red;*/
+	 display: inline-block;
+	font-family: sans-serif;
+	/*padding: 4px;*/
+	font-size: 1.2rem;
+	/*margin-left: 10%;*/
+	text-align: center;
+	transition: all 1s ease-in-out;
+	}
+.img-cont :hover{
+	transform: scale(1.2);
+}
+
+/************icons************/
+#contact{
+	margin-bottom : 5%;
+}
+.contact-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.cont-head{
+	font-size: 2.5rem;
+	color :white;
+	margin-bottom: 3%;
+}
+.icons-contact{
+	    width: 44%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /*margin-left: 5%;*/
+    min-width: 19rem;
+    margin-left: 0;
+
+}
+
+.git a{
+	display: inline-block;
+	margin-top: 4%;
+	font-size: 21px;
+	color: white;
+	text-decoration: none;
+}
+
+.git a:hover{
+	color : yellow;
+}
+
+/**********input************/
+.input{
+	min-width: 19rem;
+	/*width : 45%;*/
+	/*padding-left: 5%;*/
+}
+.input div{
+   margin-top: 5%;
+   margin-bottom: 5%;
+   font-size: 2rem; 
+   color : white;
+   width : 8rem;
+   background-color: red;
+   border-bottom-right-radius: 18px;
+   display: inline-block;
+}
+
+.input input{
+  color : white;
+  display: flex;
+  font-size: 18px;
+  background-color: transparent;
+    padding : 10px;
+    color : white;
+    border : 2px solid white;
+    margin-bottom: 15px;
+    min-width : 16rem;
+}
+
+textarea{
+	    width: 16rem;
+    font-size: 18px;
+    padding: 10px;
+    height: 79px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+#button{
+  
+   width : 6rem;
+   height : 2.5rem;
+   font-size: 18px;
+   color : red;
+   background-color : transparent;
+   border : 2px solid white;
+}
+
+#button:hover{
+  background: #580e0e;  color: white;
+  border-color: #250505;
+}
+
+
+/************resume********/
+
+#resume{
+	text-align: center;
+}
+
+#resume a{
+	color : white;
+	font-size: 22px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#resume span{
+	color : white;
+	font-size: 20px;
+}
+
+#resume a:hover{
+	color : red;
+}
+
+.up{
+	text-align: end;
+	margin-right: 3%;
+}
+
+.up i{
+	font-size: 22px;
+	color : white;
+}
+
+.up i:hover{
+	color : green;
+}
+
 }
