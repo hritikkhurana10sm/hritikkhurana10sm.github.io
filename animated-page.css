@@ -623,20 +623,23 @@ header{
     background-position: center;
 }
 #top{
-	    display: block;
+	    display: flex;
     background-color: red;
-    height: 5vh;
+    height: 7vh;
     position: fixed;
     z-index: 5;
     top: 0;
     left: 0;
     width: 100%;
-    text-align: end;
+    justify-content: flex-end;
+    /*text-align: end;*/
 }
 
 #top span {
-	text-align: center;
-	margin-right: 2%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
 }
 #top span i{
 	color : black;
@@ -730,13 +733,13 @@ header{
 }
 
 #special{
-	margin-top: 25px;
+	margin-top: 50px;
 
 	white-space: nowrap;
 	 overflow: hidden;
   border-right: 3px solid;
-	width : 17ch;
-	animation: type 2s steps(17) , blink 0.9s step-end infinite alternate;
+	width : 18ch;
+	animation: type 2s steps(18) , blink 0.9s step-end infinite alternate;
 }
 
 .small-line{
@@ -820,9 +823,10 @@ section{
 	margin-bottom: 75px;
 }
 #about h1{
-	margin: auto;
-    text-align: center;
-    font-size: 3.2rem;
+/*margin: auto;*/
+  align-self: flex-start;
+    /*text-align: center;*/
+    font-size: 1.8rem;
     color: white;
     font-weight: 900;
 }
@@ -1113,7 +1117,7 @@ flex-grow: 1;
 	justify-content: space-around;
 }
 .cont-head{
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	color :white;
 	margin-bottom: 3%;
 }
@@ -1199,6 +1203,7 @@ textarea{
 
 #resume{
 	text-align: center;
+	margin-bottom: 75px;
 }
 
 #resume a{
